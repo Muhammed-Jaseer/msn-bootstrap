@@ -1,0 +1,937 @@
+<html>
+
+<head>
+  <title>MSN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .paragraph>p:hover {
+      background-color: black;
+    }
+
+    .paragraph {
+      cursor: pointer;
+    }
+
+    .gradient-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 650px;
+      height: 40%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+      border-radius: 10px;
+    }
+    .card-body > i:hover{
+      cursor: pointer;
+      background-color: gray;
+      width: 20px;
+      border-radius: 30px;
+      padding: 2px;
+    }
+  </style>
+
+
+</head>
+
+<body style="background-color:  rgba(0, 0, 0, 0.866);">
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-md  navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0);">
+      <a class="navbar-brand" href="#">
+        <img src="logo.jpg" alt="logo" style="height: 45px;"></a>
+
+
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar" style="justify-content: center; width:100%;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="width:820px; margin-top: -8px; ">
+
+
+
+
+              <div class="container-fluid " style="position: relative;width: 100%;">
+
+
+
+
+                <i class="fas fa-search"
+                  style="position: absolute; top: 18px; left: 25px; font-size:15px; color: gray; padding-left: 15px; cursor: pointer;"></i>
+
+                <input type="text" class="form-control" placeholder="Search the web"
+                  style="width: 100%; border-radius: 30px; height: 50px; font-size: 15px; padding-left: 50px;">
+
+
+
+                <img src="pilot.jpg" alt="pilot"
+                  style="height: 40px; position: absolute; top: 2px; right: 30px; border-radius: 30px; padding: 8px;">
+            </a>
+          </li>
+
+
+      </div>
+      </ul>
+
+      <div class="collapse navbar-collapse fixed-right" id="collapsibleNavbar">
+        <ul class="navbar-nav ">
+          <li class="nav-item " style="display: flex; ">
+            <a class="nav-link" href="#">
+
+
+              <img src="wheatheer.jpg" alt="wheatheer" style="height: 30px; margin-top: 10px;"></a>
+
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Page Settings"
+              style="margin-top: 20px; "><span style="font-size: 18px;">&#9881;</span></a>
+
+            <button type="button " class="btn btn-dark mt-2 ml-3 " style="width: 80px;padding: 10px; height: 50px;">Sign
+              In</button>
+
+
+
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+  <br><br><br><br>
+
+  <div class="container" style="display: flex; ">
+    <div>
+
+      <button type="button" class="btn btn-secondary"
+        style="background-color: #2b292996; border-radius: 15px; color: blue; font-size: 15px; padding: 8px; border: 1px solid   #2b292996;"><b>Discover</b></button>
+    </div>
+
+    <div class="paragraph " style="display: flex; ">
+      <p style="padding: 5px; margin-left: 10px; color: white; ">News</p>
+      <p style="padding: 5px; margin-left: 10px; color: white;">Sports</p>
+      <p style="padding: 5px; margin-left: 10px; color: white; ">Play</p>
+
+      <p style="padding: 5px; margin-left: 10px; color: white; ">Money</p>
+      <p style="padding: 5px; margin-left: 10px; color: white; ">Weather</p>
+      <p style="padding: 5px; margin-left: 10px; color: white; ">Watch</p>
+      <p style="padding: 5px; margin-left: 10px; color: white; ">Shopping</p>
+    </div>
+
+    <div style="margin-left: 400px;  ">
+      <button type="button" class="btn btn-secondary ml-3"
+        style="border-radius: 20px; background-color: #2b292996; border: 1px solid white; font-size: 15px;"><span
+          style="font-size: 18px;">&#9734;</span> Personalize</button>
+    </div>
+
+
+  </div>
+
+
+
+  
+<div style="display: flex; justify-content: space-between; width: 100%;">
+  <div class="container">
+    
+    <div class="row">
+
+      
+      <div class="col-md-6 col-lg-6 col-sm-12">
+        <div id="demo" class="carousel slide " style="width:550px; margin-top: 15px;" data-ride="carousel"  >
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators" style="width: 400px;">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+            <li data-target="#demo" data-slide-to="6"></li>
+            <li data-target="#demo" data-slide-to="7"></li>
+            <li data-target="#demo" data-slide-to="8"></li>
+            <li data-target="#demo" data-slide-to="9"></li>
+          </ul>
+
+
+          <div class="carousel-inner" style="border-radius: 10px; border: none;">
+            <div class="carousel-item active">
+              <div class="gradient-overlay"></div>
+              <img src="potato.jpg" alt="Los Angeles" width="550" height="340" class="img-fluid">
+              <div class="carousel-caption " style="margin-left: -50px;">
+                <h4 style="font-size:25px; text-align: left; font-weight: bold;">Sweet potatoes for skin: 7 benefits for
+                  a glowing, youthful, and hydrated complexion
+                </h4>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gradient-overlay"></div>
+              <img src="snacks.jpg" alt="Chicago" width="550" height="340" class="img-fluid">
+              <div class="carousel-caption " style="margin-left: -50px;">
+                <h4 style="font-size:25px; text-align: left; font-weight: bold;">high fat content, especially saturated
+                  fats in these deep-fried snacks, poses significant...</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gradient-overlay"></div>
+              <img src="kohli.jpg" alt="New York" width="550" height="340" class="img-fluid">
+              <div class="carousel-caption " style="margin-left: -50px;">
+                <h4 style="font-size:25px; text-align: left; font-weight: bold;">Kohli: 'Applied ourselves well after
+                  three average games at home'</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gradient-overlay"></div>
+              <img src="google.jpg" alt="New York" width="550" height="340" class="img-fluid">
+              <div class="carousel-caption " style="margin-left: -50px;">
+                <h4 style="font-size:25px; text-align: left; font-weight: bold;">This tech startup once rejected ₹2 lakh
+                  crore offer from Google, it is now being sold at…</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gradient-overlay"></div>
+              <img src="lawyer.jpg" alt="New York" width="550" height="340" class="img-fluid">
+              <div class="carousel-caption " style="margin-left: -50px;">
+                <h4 style="font-size:25px; text-align: left; font-weight: bold;">This tech startup once rejected ₹2 lakh
+                  crore offer from Google, it is now being sold at…</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gradient-overlay"></div>
+              <img src="thalapathy vs rebel star.jpg" alt="New York" width="550" height="340" class="img-fluid">
+              <div class="carousel-caption " style="margin-left: -50px;">
+                <h4 style="font-size:25px; text-align: left; font-weight: bold;">Prabhas’s ‘Baahubali- The Epic’ beats
+                  Thalapathy Vijay’s ‘Ghilli’ to become...</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gradient-overlay"></div>
+              <img src="sandwitch.jpg" alt="New York" width="550" height="340" class="img-fluid">
+              <div class="carousel-caption " style="margin-left: -50px;">
+                <h4 style="font-size:25px; text-align: left; font-weight: bold;">7 high-protein sandwiches that make for
+                  quick and easy breakfasts</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gradient-overlay"></div>
+              <img src="shammi.jpg" alt="New York" width="550" height="340" class="img-fluid">
+              <div class="carousel-caption " style="margin-left: -50px;">
+                <h4 style="font-size:25px; text-align: left; font-weight: bold;">End of the road for Mohammed Shami?
+                  Selectors send strong signal..</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gradient-overlay"></div>
+              <img src="papaya.jpg" alt="New York" width="550" height="340" class="img-fluid">
+              <div class="carousel-caption " style="margin-left: -50px;">
+                <h4 style="font-size:25px; text-align: left; font-weight: bold;">What really happens when you start
+                  eating papaya daily</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gradient-overlay"></div>
+              <img src="tea.jpg" alt="New York" width="550" height="340" class="img-fluid">
+              <div class="carousel-caption " style="margin-left: -50px;">
+                <h4 style="font-size:25px; text-align: left; font-weight: bold;">How Much Chai Should You Really Drink A
+                  Day? Nutritionist Rujuta Diwekar Explains</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+</div>
+    
+
+
+<div class="col-md-4 col-lg-3 col-sm-12"  >
+
+<div class="card " style=" margin-top:15px;
+height: 315px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="papaya2.jpg" alt="Card image"  class="img-fluid"  style="height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">These 5 people should immediately stop eating papaya, this superfruit can harm </p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+  
+
+
+</div>
+
+
+
+<div class="col-md-2 col-lg-3 col-sm-12" >
+
+<div class="card" style=" margin-top: 15px;
+height: 315px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);" >
+    <img class="card-img-top" src="microsoft.jpg" alt="Card image"  class="img-fluid"  style=" height: 275px; border-radius: 10px; border:none;" >
+    <div class="card-body">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style=" margin-top: -18px; color: white; font-size: 12px;">Sponsored</p>
+  
+    </div>
+  </div>
+  
+
+
+</div>
+
+
+</div>
+
+    </div>
+    </div>
+
+
+
+<div class="container">
+<div class="row">  
+
+<div class="col-md-3 col-lg-3 col-sm-12">
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="cars.jpg" alt="Card image"  class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">5 hybrid cars in India that can travel over 1,000 km on a single tank</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+  
+
+
+</div>
+
+
+
+
+
+<div class="col-md-3 col-lg-3 col-sm-12"  >
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;" >
+    <img class="card-img-top" src="credit.jpg" alt="Card image"  class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title" style="color: white; font-size: 12px;">CREDILIO</h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 18px;">Get your credit card in minutes with our easy online application!</p>
+      <p class="card-text" style=" margin-top: -10px; color: white; font-size: 12px;">Sponsored</p>
+    </div>
+  </div>
+  
+
+
+</div>
+
+
+
+
+<div class="col-md-6 col-lg-6 col-sm-12"  >
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;" >
+    <img class="card-img-top" src="shardul.jpg" alt="Card image"  class="img-fluid"  style=" height: 350; border-radius: 10px; border:none;" >
+<div class="card-img-overlay">
+<div class="gradient-overlay" style="margin-left: -20px; position: absolute; height: 40%;"></div>
+<h4 class="card-title" style="margin-top: 200px; color: white; font-size: 18px; position: relative;"> <b>Shardul Thakur Creates History, Becomes First Player In The World To...<b></h4>
+<i class="fa fa-thumbs-o-up ml-2" style="color: white; position: relative;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white; position: relative;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white; position: relative;"></i>
+</div>
+  </div>
+  
+
+
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="container">
+<div class="row">
+
+
+<div class="col-md-3 col-lg-3 col-sm-12">
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="chinna thala.jpg" alt="Card image"  class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">Suresh Raina's Love Story: How a 40-hour flight changed his life</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+  
+
+</div>
+
+
+
+<div class="col-md-3 col-lg-3 col-sm-12">
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="wpl.jpg" alt="Card image"  class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">WPL Mega Auction: 277 players to go under hammer; Deepti, Healy..</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+  
+
+</div>
+
+
+
+
+<div class="col-md-3 col-lg-3 col-sm-12">
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="hema.jpg" alt="Card image"  class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">Hema Malini breaks silence on Dharmendra’s death with emotional.. ’</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+  
+
+</div>
+
+
+
+<div class="col-md-3 col-lg-3 col-sm-12">
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="fcb.jpg" alt="Card image"  class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">Barça Move, Harry Kane Gives Final Answer</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+  
+
+</div>
+
+
+</div>
+</div>
+
+
+ <div class="container">
+  <div class="row">
+
+  <div class="col-md-6 col-lg-6 col-sm-12">
+     
+   <div class="card img-fluid" style="margin-top: 15px; height: 300px; background-color: rgba(0, 0, 0, 0.178); border-radius: 10px;">
+    <img class="card-img-top" src="smrithi.jpg" alt="Card image" style="height: 300px; border-radius: 10px; border:none;">
+    <div class="card-img-overlay">
+      
+      <h4 class="card-title"></h4>
+      <div class="gradient-overlay" style="margin-left: -20px; width: 100%; bottom: -1; height: 45%;"></div>
+      <p class="card-text" style="position: relative; color: white; margin-top: 180px; font-weight: bold; font-size: 20px;">Jemimah Rodrigues Makes Big Sacrifice To Support Smriti Mandhana After Her Wedding Got Postponed</p>
+   
+   <i class="fa fa-thumbs-o-up " style="color: white; position: relative;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white; position: relative;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white; position: relative;"></i>
+   
+   
+    </div>
+  </div>
+
+  
+  
+  </div>
+
+
+
+
+<div class="col-md-3 col-lg-3 col-sm-12">
+
+<div class="card" style="margin-top: 15px; height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);">
+    <img class="card-img-top" src="iphone.jpg" alt="Card image" class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-size: 17px; font-weight: bold;">‘Rs 1.5 lakh lunch box’: Student brings ‘iPhone box’ to class; opens it to..
+</p>
+
+ <i class="fa fa-thumbs-o-up " style="color: white; position: relative;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white; position: relative;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white; position: relative;"></i>
+  
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="col-md-3 col-lg-3 col-sm-12">
+
+<div class="card" style="margin-top: 15px; height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);">
+    <img class="card-img-top" src="nepal rupee.jpg" alt="Card image" class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-size: 17px; font-weight: bold;">Nepal releases 100 rupee note with map of 3 Indian territories; MEA reacts</p>
+    
+     <i class="fa fa-thumbs-o-up " style="color: white; position: relative;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white; position: relative;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white; position: relative;"></i>
+
+    
+    </div>
+  </div>
+</div>
+
+  </div>
+ </div>
+
+
+<div class="container">
+<div class="row">
+
+<div class="col-md-3 col-lg-3 col-sm-12">
+<div class="card" style="margin-top: 15px; height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);">
+    <img class="card-img-top" src="baby.jpg" alt="Card image" class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-size: 17px; font-weight: bold;">Baby names that are banned in the US
+</p>
+    
+     <i class="fa fa-thumbs-o-up " style="color: white; position: relative;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white; position: relative;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white; position: relative;"></i>
+
+    
+    </div>
+  </div>
+
+</div>
+
+<div class="col-md-3 col-lg-3 col-sm-12">
+
+
+  <div class="card" style="margin-top: 15px; height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);">
+    <img class="card-img-top" src="bihar.jpg" alt="Card image" class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-size: 17px; font-weight: bold;">'Bihar is dirty because of our habits': Man appeals..
+</p>
+    
+     <i class="fa fa-thumbs-o-up " style="color: white; position: relative;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white; position: relative;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white; position: relative;"></i>
+
+    
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="col-md-6 col-lg-6 col-sm-12">
+
+<div id="demo" class="carousel slide" data-ride="carousel" style="margin-top: 15px;">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+    <li data-target="#demo" data-slide-to="7"></li>
+    <li data-target="#demo" data-slide-to="8"></li>
+    <li data-target="#demo" data-slide-to="9"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner" style="border-radius: 10px; border: none;">
+    <div class="carousel-item active">
+      <div class="gradient-overlay"></div>
+ 
+      <img src="cyclone ditwah.jpg" alt="Los Angeles" width="540" height="300">
+   <div class="carousel-caption" style="margin-left: -50px;">
+        <h4 style="font-size:22px; text-align: left; font-weight: bold;">Cyclone Ditwah: What The Name Means And When It Will Make Landfall</h4>
+        </div>  
+    </div>
+    <div class="carousel-item">
+      <div class="gradient-overlay"></div>
+ 
+      <img src="shree charani.png" alt="Chicago" width="540" height="300">
+    <div class="carousel-caption" style="margin-left: -50px;">
+        <h4 style="font-size:22px; text-align: left; font-weight: bold;">Shree Charani: How a 20-year-old unknown girl became WPL’s priciest new star</h4>
+        </div>  
+   </div>
+    <div class="carousel-item">
+      <div class="gradient-overlay"></div>
+ 
+      <img src="bail.jpg" alt="New York" width="540" height="300">
+       <div class="carousel-caption" style="margin-left: -50px;">
+        <h4 style="font-size:22px; text-align: left; font-weight: bold;">'She appears to be disturbed': Bail granted to Chennai techie Rene Joshilda...</h4>
+        </div>  
+  </div>
+  <div class="carousel-item">
+    <div class="gradient-overlay"></div>
+ 
+      <img src="australia.jpg" alt="New York" width="540" height="300">
+       <div class="carousel-caption" style="margin-left: -50px;">
+        <h4 style="font-size:22px; text-align: left; font-weight: bold;">Australia declares this Muslim country's army a terrorist organisation, find out why
+
+</h4>
+        </div>  
+  </div>
+  <div class="carousel-item">
+    <div class="gradient-overlay"></div>
+ 
+      <img src="27.jpg" alt="New York" width="540" height="300">
+       <div class="carousel-caption" style="margin-left: -50px;">
+        <h4 style="font-size:22px; text-align: left; font-weight: bold;">27-Year-Old Becomes 1st Woman In Her Family To Own A House; 'My Younger Self Would Be In Tears'| VIDEO
+</h4>
+        </div>  
+  </div>
+  <div class="carousel-item">
+    <div class="gradient-overlay"></div>
+ 
+      <img src="wpl auction.jpg" alt="New York" width="540" height="300">
+       <div class="carousel-caption" style="margin-left: -50px;">
+        <h4 style="font-size:22px; text-align: left; font-weight: bold;">WPL Auction 2025: Who is Jinisha Sharma, the UP Warriorz owner who spent Rs 3.2 crore on Deepti Sharma?</h4>
+        </div>  
+  </div>
+  <div class="carousel-item">
+    <div class="gradient-overlay"></div>
+ 
+      <img src="rahul.jpg" alt="New York" width="540" height="300">
+       <div class="carousel-caption" style="margin-left: -50px;">
+        <h4 style="font-size:22px; text-align: left; font-weight: bold;">Rahul Gandhi slams PM Modi’s ‘silence’ as Delhi battles severe air pollution
+</h4>
+        </div>  
+  </div>
+  
+  <div class="carousel-item">
+    <div class="gradient-overlay"></div>
+ 
+      <img src="love story.jpg" alt="New York" width="540" height="300">
+       <div class="carousel-caption" style="margin-left: -50px;">
+        <h4 style="font-size:22px; text-align: left; font-weight: bold;">Little love stories: It was her eyes that changed my entire life!
+
+</h4>
+        </div>  
+  </div>
+  <div class="carousel-item">
+    <div class="gradient-overlay"></div>
+ 
+      <img src="tremp.jpg" alt="New York" width="540" height="300">
+       <div class="carousel-caption" style="margin-left: -50px;">
+        <h4 style="font-size:22px; text-align: left; font-weight: bold;">No migrants from Third World: Throwback to Trump's sweeping travel ban on several Muslim nations in 2017
+
+</h4>
+        </div>  
+  </div>
+  <div class="carousel-item">
+    <div class="gradient-overlay"></div>
+ 
+      <img src="bangluru rider.jpg" alt="New York" width="540" height="300">
+       <div class="carousel-caption" style="margin-left: -50px;">
+        <h4 style="font-size:22px; text-align: left; font-weight: bold;">Bengaluru rider left with ₹6 lakh hospital bill, multiple fractures after accident: ‘Tum apne roads ke liye kuch karo’
+</h4>
+        </div>  
+  </div>
+  
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="container">
+<div class="row">
+
+
+ <div class="col-md-3 col-lg-3 col-sm-12">
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="deepti sharma.jpg" alt="Card image"  class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">'She fully deserved Rs 3.2 crore’: Experts hail Deepti Sharma..
+
+</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+
+
+
+
+
+ </div>
+
+
+
+
+ <div class="col-md-3 col-lg-3 col-sm-12">
+
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="rakul.jpg" alt="Card image"  class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">Rakul Preet: Chatting using my name is not right, it’s a crime
+</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+
+
+ </div>
+
+
+
+
+ <div class="col-md-3 col-lg-3 col-sm-12">
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="aneet padda.jpg" alt="Card image"  class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">Saiyaara Actress Aneet Padda Opens Up On How She Decided To Become..
+</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+
+
+
+ </div>
+
+
+
+
+ <div class="col-md-3 col-lg-3 col-sm-12">
+
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="chinna thala.jpg" alt="Card image"  class="img-fluid"  style=" height: 150; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">Suresh Raina's Love Story: How a 40-hour flight changed his life</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+
+  
+ </div>
+
+
+
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+
+<div class="col-md-2 col-lg-2 col-sm-12">
+
+
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="ronaldo.jpg" alt="Card image"  class="img-fluid"  style=" height: 300; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">
+</p>
+  
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="col-md-2 col-lg-2 col-sm-12">
+
+
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="india.jpg" alt="Card image"  class="img-fluid"  style=" height: 180; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">India defeat iran..
+</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="col-md-2 col-lg-2 col-sm-12">
+
+
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="intermiami.jpg" alt="Card image"  class="img-fluid"  style=" height: 180; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">Miami Lift the Cup..
+</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="col-md-2 col-lg-2 col-sm-12">
+
+
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="rashford.jpg" alt="Card image"  class="img-fluid"  style=" height: 160; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">Rashford become Super sub..
+</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="col-md-2 col-lg-2 col-sm-12">
+
+
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="chealsea.jpg" alt="Card image"  class="img-fluid"  style=" height: 300; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">
+</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="col-md-2 col-lg-2 col-sm-12">
+
+
+
+<div class="card" style=" margin-top:15px;
+height: 300px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.178);overflow: hidden;  " >
+    <img class="card-img-top" src="leo.jpg" alt="Card image"  class="img-fluid"  style=" height: 180; border-radius: 10px; border:none;" >
+    <div class="card-body " style="margin-top: -10;">
+      <h4 class="card-title"></h4>
+      <p class="card-text" style="color: white; font-weight: bold; font-size: 17px;">Dream Comes True..</p>
+  <i class="fa fa-thumbs-o-up " style="color: white;"></i>
+<i class="fa fa-thumbs-o-down ml-1" style="color: white;"></i>
+<i class='far fa-comment-alt ml-1' style="color: white;"></i>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+</body>
+
+</html>
